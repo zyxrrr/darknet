@@ -271,11 +271,11 @@ image **load_alphabet()
     image** alphabets = (image**)xcalloc(nsize, sizeof(image*));
     for(j = 0; j < nsize; ++j){
         alphabets[j] = (image*)xcalloc(128, sizeof(image));
-        for(i = 32; i < 127; ++i){
-            char buff[256];
-            sprintf(buff, "data/labels/%d_%d.png", i, j);
-            alphabets[j][i] = load_image_color(buff, 0, 0);
-        }
+        //for(i = 32; i < 127; ++i){
+        //    char buff[256];
+        //    sprintf(buff, "data/labels/%d_%d.png", i, j);
+        //    alphabets[j][i] = load_image_color(buff, 0, 0);
+        //}
     }
     return alphabets;
 }

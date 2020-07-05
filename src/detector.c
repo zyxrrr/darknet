@@ -1555,7 +1555,7 @@ void test_detector(char *datacfg, char *cfgfile, char *weightfile, char *filenam
     float hier_thresh, int dont_show, int ext_output, int save_labels, char *outfile, int letter_box, int benchmark_layers)
 {
     list *options = read_data_cfg(datacfg);
-    char *name_list = option_find_str(options, "names", "data/names.list");
+    char *name_list = option_find_str(options, "names", "coco.names");
     int names_size = 0;
     char **names = get_labels_custom(name_list, &names_size); //get_labels(name_list);
 
